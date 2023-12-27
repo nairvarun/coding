@@ -30,7 +30,7 @@ type seenBlock struct {
 
 type priorityQueue []*block
 
-func (pq priorityQueue) Len() int 			{	return len(pq) }
+func (pq priorityQueue) Len() int 			{ return len(pq) }
 func (pq priorityQueue) Less(i, j int) bool { return pq[i].heatLoss < pq[j].heatLoss }
 func (pq priorityQueue) Swap(i, j int) 		{ pq[i], pq[j] = pq[j], pq[i] }
 func (pq *priorityQueue) Push(x any) 		{ *pq = append(*pq, x.(*block)) }
