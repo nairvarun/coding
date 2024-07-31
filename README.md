@@ -1,6 +1,6 @@
-# 1BRC: One Billion Row Challenge in Python
+# 1BRC: One Billion Row Challenge in Python (using DuckDB)
 
-Python implementation of Gunnar's 1 billion row challenge:
+Python + DuckDB implementation of Gunnar's 1 billion row challenge:
 - https://www.morling.dev/blog/one-billion-row-challenge
 - https://github.com/gunnarmorling/1brc
 
