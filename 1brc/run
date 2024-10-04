@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# This script runs the 1brc.py script with optional command line arguments.
+# If no argument is provided, it runs the 1brc.py script with the default input file "measurements.txt".
+# If an argument is provided, it creates a temporary file with the specified number of lines from "measurements.txt",
+# runs the 1brc.py script with the temporary file as input, and then deletes the temporary file.
+
+if [ "$1" == "" ]; then
+	time python3 1brc.py measurements.txt
+else
+	head -n $1 measurements.txt > .tmp-measurements.txt
+	time python3 1brc.py .tmp-measurements.txt
+	rm .tmp-measurements.txt
+fi
