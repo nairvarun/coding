@@ -1,3 +1,2 @@
 *.txt
-scratch.go
-.vscode
+*.class
